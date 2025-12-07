@@ -10,23 +10,23 @@ export default function Navbar() {
   return (
     <section className='w-full h-[65px] bg-black flex flex-row justify-between items-center px-[5%]'>
         <div className='w-[65px]'>
-            <img src="/Navbar/legion-logo.png" alt="" />
+            <img src="/Navbar/legion-logo.png" alt="legion-logo" />
         </div>
         <div className={mobile ? 'flex' : 'hidden'}>
             <ul className='flex flex-row justify-between items-center gap-10'>
-                <li className='text-white Orbitron cursor-pointer text-[14px]'>
+                <li className='text-[#D6D3D1] Orbitron cursor-pointer text-[14px]'>
                     Design
                 </li>
-                <li className='text-white Orbitron cursor-pointer text-[14px]'>
+                <li className='text-[#D6D3D1] Orbitron cursor-pointer text-[14px]'>
                     Products
                 </li>
-                <li className='text-white Orbitron cursor-pointer text-[14px]'>
+                <li className='text-[#D6D3D1] Orbitron cursor-pointer text-[14px]'>
                     Models
                 </li>
-                <li className='text-white Orbitron cursor-pointer text-[14px]'>
+                <li className='text-[#D6D3D1] Orbitron cursor-pointer text-[14px]'>
                     Services
                 </li>
-                <li className='text-white Orbitron cursor-pointer text-[14px]'>
+                <li className='text-[#D6D3D1] Orbitron cursor-pointer text-[14px]'>
                     About
                 </li>
             </ul>
