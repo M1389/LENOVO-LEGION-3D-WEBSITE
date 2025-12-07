@@ -1,7 +1,12 @@
 import React from 'react'
+import Header from './Pages/Home/Header'
+import { RouterProvider } from 'react-router-dom'
+import router from './Routes'
 
 export default function App() {
   return (
-    <div className='text-amber-300 text-2xl'>Hello tailwind css</div>
+    <>
+      <RouterProvider router={router}/>
+    </>
   )
 }
