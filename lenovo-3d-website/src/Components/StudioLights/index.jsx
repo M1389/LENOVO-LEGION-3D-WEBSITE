@@ -29,6 +29,14 @@ export default function StudioLights() {
             scale={10}
             />
         </group>
+        <group>
+            <Lightformer 
+            form='rect'
+            intensity={10}
+            position={[6,5,-5]}
+            scale={10}
+            />
+        </group>
         </Environment> 
         
     </group>
