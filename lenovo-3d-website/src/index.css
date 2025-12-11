@@ -17,3 +17,13 @@
   position: relative;
   z-index: 40;
 }
+
+
+
+.RGBTEXTURE {
+  background: linear-gradient(90deg, #00ff9d, #7a00ff, #ff00c8, #ff0000);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow 10s linear infinite;
+}

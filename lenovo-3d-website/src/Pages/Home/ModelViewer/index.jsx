@@ -7,9 +7,11 @@ import { BlackLegion } from "../../../Components/Models/Lenovo/BlackLegion";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import { useMediaQuery } from "react-responsive";
 
 gsap.registerPlugin(ScrollTrigger);
 export default function ModelViewer() {
+  const mobile = useMediaQuery({ query: "(max-width: 768px)" });
   const sectionRef = useRef(null);
   const [dark, setDark] = useState(false);
 
@@ -55,11 +57,11 @@ export default function ModelViewer() {
   return (
     <section ref={sectionRef} className="bg-black py-12 ">
       <div className="py-11 flex flex-col items-center">
-        <h2 className="FadeIn text-5xl Orbitron text-white text-center tracking-wider">
+        <h2 className={`FadeIn ${!mobile ? 'text-5xl' : 'text-2xl'} Orbitron text-white text-center tracking-wider`}>
           Take a colser look
         </h2>
         <img
-          className="FadeInTwo w-[45%] mx-auto"
+          className={`FadeInTwo ${!mobile ? 'w-[40%]' : 'w-[70%]'} mx-auto`}
           src="/ModelPreview/RGB-closerlook-2.png"
           alt="RGB-light"
         />
@@ -82,23 +84,27 @@ export default function ModelViewer() {
           global={true}
           config={{ mass: 2, tension: 400 }}
         >
-          <Center>
-            <group position={[0,0,0]} scale={100}>
+          <Center key={mobile ? "mobile" : "desktop"} >
+            <group scale={mobile ? 60 : 100} >
               {dark ? <BlackLegion /> : <Legion />}
             </group>
           </Center>
         </PresentationControls>
       </Canvas>
 
-      <div className="bg-[#636363]  w-[10%] h-[65px] rounded-full flex flex-row justify-between items-center px-1 gap-1.5 mx-auto">
+      <div className={`bg-[#636363] ${mobile ? 'w-[50%]' : 'w-[15%]'}  h-[65px] rounded-full flex flex-row justify-between items-center px-1 gap-1.5 mx-auto`}>
         <div
           onClick={() => setDark(false)}
-          className={`w-[50%] h-[55px] rounded-full bg-white cursor-pointer border-2 ${dark ? 'border-white' : 'border-red-600'}}`}
+          className={`w-[50%] h-[55px] rounded-full bg-white cursor-pointer border-2 ${dark ? 'border-white' : 'border-amber-400'}`}
         />
         <div
           onClick={() => setDark(true)}
-          className={`w-[50%] h-[55px] rounded-full bg-[#2E2E2E] cursor-pointer ${dark ? 'border-black' : 'border-red-600'}}`}
+          className={`w-[50%] h-[55px] rounded-full bg-[#2E2E2E] cursor-pointer border-2 ${!dark ? 'border-[#2E2E2E]' : 'border-amber-400'}`}
         />
+      </div>
+      <div className="w-[50%^] mx-auto flex flex-col items-center pt-11 gap-3">
+        <p className="text-white text-xl text-center">Designed For <span className="RGBTEXTURE">Gaming</span> and also we tried to make it <span className="RGBTEXTURE">Soft and handy</span>.</p>
+        <p className="text-white text-2xl text-center">“Designer-Team”</p>
       </div>
     </section>
   );
