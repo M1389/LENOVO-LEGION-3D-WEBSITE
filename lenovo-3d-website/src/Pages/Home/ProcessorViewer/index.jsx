@@ -3,12 +3,13 @@ import React from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useMediaQuery } from "react-responsive";
+import CpuIntro from "../CpuIntro";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function ProcessorViewer() {
 
-  const tablet = useMediaQuery({query: ('max-width: 1080px')});
+  const tablet = useMediaQuery({query: '(max-width: 920px)'});
   useGSAP(() => {
     if(!tablet){
         const timeLine = gsap.timeline({
@@ -64,13 +65,14 @@ export default function ProcessorViewer() {
           alt="Ryzen"
         />
 
-        <div className="z-100 absolute bottom-[20%] left-[50%] -translate-[50%] ">
-          <h2 className="text-white text-3xl Orbitron text-center mb-5">
+        <div className={`z-100 absolute bottom-[20%] left-[50%] -translate-[50%] ${tablet ? 'hidden' : 'flex'} `}>
+          <h2 className={`text-white ${tablet ? 'text-xl' : 'text-3xl'} Orbitron text-center mb-5`}>
             The True Feeling of <span className="RGBTEXTURE">GAMING</span> with
           </h2>
-          <h3 className="Orbitron text-4xl text-red-600 text-center">RYZEN Series</h3>
+          <h3 className={`Orbitron ${tablet ? 'text-xl' : 'text-4xl'} text-red-600 text-center`}>RYZEN Series</h3>
         </div>
       </div>
+      
     </section>
   );
 }
