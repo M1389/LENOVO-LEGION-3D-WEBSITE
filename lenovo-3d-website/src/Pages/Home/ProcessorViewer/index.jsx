@@ -49,7 +49,7 @@ export default function ProcessorViewer() {
   }, [tablet]);
 
   return (
-    <section id="videoContainer" className="relative overflow-hidden ">
+    <section id="videoContainer" className="relative overflow-hidden">
       <video
         className="w-full z-10"
         src="/CPUSection/videos/game-trailer.mp4"
@@ -58,14 +58,14 @@ export default function ProcessorViewer() {
         loop
         autoPlay
       />
-      <div className="Mask w-full z-50 absolute top-0 left-0">
+      <div className="Mask w-full z-50 absolute top-0 left-0 overflow-hidden">
         <img
           className="w-full"
           src="/CPUSection/images/RyzenText-2.png"
           alt="Ryzen"
         />
 
-        <div className={`z-100 absolute bottom-[20%] left-[50%] -translate-[50%] ${tablet ? 'hidden' : 'flex'} `}>
+        <div className={`z-100 absolute bottom-[20%] left-[50%] -translate-[50%] ${tablet ? 'hidden' : 'flex flex-col'} `}>
           <h2 className={`text-white ${tablet ? 'text-xl' : 'text-3xl'} Orbitron text-center mb-5`}>
             The True Feeling of <span className="RGBTEXTURE">GAMING</span> with
           </h2>
