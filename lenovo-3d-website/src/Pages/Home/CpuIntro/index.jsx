@@ -33,7 +33,7 @@ export default function CpuIntro() {
     }
   }, [tablet]);
   return (
-    <section id="CpuSection" className="relative overflow-hidden w-full h-screen bg-black">
+    <section id="CpuSection" className="relative overflow-hidden w-full h-screen bg-black ">
       <div className="w-full relative">
         <img
           className="w-full h-full"
@@ -52,10 +52,10 @@ export default function CpuIntro() {
         <h2 className="Orbitron text-4xl lg:text-8xl text-left">CPU</h2>
         <div className="grid lg:grid-cols-4 lg:grid-rows-2 grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-4 mt-4 text-center  ">
           <div className="col-span-2 Borders flex flex-row items-center justify-between">
-            <p className="Orbitron text-2xl text-left font-bold">
+            <p className="Orbitron text-xl lg:text-4xl text-left font-bold">
               Faster than Last Generation
             </p>
-            <p className="Orbitron text-2xl lg:text-3xl ">25%</p>
+            <p className="Orbitron text-2xl lg:text-4xl ">25%</p>
           </div>
           <div className="col-span-2 Borders row-span-1 row-start-2 flex flex-col items-start justify-center">
             <p className="Orbitron text-xl lg:text-4xl font-bold">3.2GH</p>
@@ -66,14 +66,16 @@ export default function CpuIntro() {
             <p className="Orbitron text-xl lg:text-3xl">Up to 32 threads</p>
           </div>
           <div>
-            <img src="/CPUSection/images/AMD-logo7.png" alt="AMD" />
+            <img src="/CPUSection/images/AMD-Ryzen9.jpg" alt="AMD" />
           </div>
           <div className="flex flex-col items-center bg-gray-600 opacity-90 justify-center Borders cursor-pointer hover:bg-gray-800 transition-all duration-300">
             <p className="text-2xl lg:text-4xl">More Info</p>
             <ArrowUpRightIcon width={48} height={48} />
           </div>
         </div>
+        
       </div>
+      
     </section>
   );
 }
