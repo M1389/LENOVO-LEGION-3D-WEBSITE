@@ -3,6 +3,7 @@ import Header from './Header'
 import ModelViewer from './ModelViewer'
 import ProcessorViewer from './ProcessorViewer'
 import CpuIntro from './CpuIntro'
+import GpuIntro from './GpuIntro'
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <ModelViewer/>
         <ProcessorViewer/>
         <CpuIntro/>
+        <GpuIntro/>
     </>
   )
 }
