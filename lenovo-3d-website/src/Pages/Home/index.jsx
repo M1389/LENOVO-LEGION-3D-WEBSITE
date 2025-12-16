@@ -5,6 +5,7 @@ import ProcessorViewer from './ProcessorViewer'
 import CpuIntro from './CpuIntro'
 import GpuIntro from './GpuIntro'
 import DisplayIntro from './DisplayIntro'
+import CoolingIntro from './CoolingIntro'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <CpuIntro/>
         <GpuIntro/>
         <DisplayIntro/>
+        <CoolingIntro/>
     </>
   )
 }

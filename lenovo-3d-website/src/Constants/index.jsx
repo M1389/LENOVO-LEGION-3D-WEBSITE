@@ -1,7 +1,4 @@
 
-
-
-
 export const gpuInfo = [
     {
         id: 1,
@@ -51,4 +48,33 @@ export const gpuInfo = [
         header: 'Realistic and Immersive Graphics',
         description: 'Dedicated Ray Tracing Cores'
     }
+];
+
+
+
+export const coolingInfo = [
+    {
+        id: 1,
+        img: '/CoolingSection/images/activity.png',
+        header: 'Advanced Thermal Design',
+        description: 'A dual-fan layout with wide heat pipes and large venting channels that efficiently moves heat away from CPU and GPU to maintain performance under load.'
+    },
+    {
+        id: 2,
+        img: '/CoolingSection/images/codesandbox.png',
+        header: 'Intelligent Coldfront Technology',
+        description: 'Adaptive fan curves and thermal profiles that automatically balance cooling and noise based on workload, with customizable modes in Lenovo Vantage.'
+    },
+    {
+        id: 3,
+        img: '/CoolingSection/images/slack.png',
+        header: 'Vapor Chamber & Heat Pipe Combination',
+        description: 'Some Legion 5 models use a vapor chamber or multiple copper heat pipes to spread heat evenly across the cooling assembly for faster dissipation.'
+    },
+    {
+        id: 4,
+        img: '/CoolingSection/images/wind.png',
+        header: 'Intake/Exhaust Optimization & Airflow Channels',
+        description: 'Strategically placed intake vents (including bottom and keyboard intakes) and rear/top exhausts, plus internal air guides, to maximize airflow and reduce hotspots.'
+    },
 ]
