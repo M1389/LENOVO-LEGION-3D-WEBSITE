@@ -32,7 +32,7 @@ export default function DisplayIntro() {
                 opacity: 0
             },
             {
-                opacity: 1,
+                opacity: 1, 
                 ease: 'power1.inOut'
             }
         )
@@ -41,6 +41,9 @@ export default function DisplayIntro() {
     },[tablet])
   return (
     <section id='sectionRef' className='bg-black py-10  px-[5%] overflow-hidden'>
+        <div className='mb-12'>
+            <h2 className='Orbitron RGBTEXTURE font-bold text-3xl lg:text-8xl text-center '>4K Display-240Hz</h2>
+        </div>
         <div className='relative ZoomOut'>
             <div>
                 <img className='Frame' src="/DisplaySection/images/Lenovo-Front-3.png" alt="Legion-5" />
@@ -51,8 +54,8 @@ export default function DisplayIntro() {
             </div>
         </div>
         <div>
-            <h2 className='Orbitron RGBTEXTURE text-3xl lg:text-8xl text-center mb-5'>4K Display-240Hz</h2>
-            <p className='text-white text-xl lg:text-2xl text-center w-[80%] lg:w-[60%] mx-auto mt-10'>IPS-panel display with 240Hz performance — <span className='RGBTEXTURE'>the best choice for fast-paced gaming on the Legion 5 laptop</span>, delivering smooth motion, low input lag, and vibrant colors that keep competitive shooters and high-FPS titles buttery-clear while maintaining excellent viewing angles for streaming and co-op play.</p>
+            
+            <p className='text-white text-xl lg:text-2xl text-center w-[80%] lg:w-[60%] mx-auto mt-10 '>IPS-panel display with 240Hz performance — <span className='RGBTEXTURE'>the best choice for fast-paced gaming on the Legion 5 laptop</span>, delivering smooth motion, low input lag, and vibrant colors that keep competitive shooters and high-FPS titles buttery-clear while maintaining excellent viewing angles for streaming and co-op play.</p>
         </div>
     </section>
   )
