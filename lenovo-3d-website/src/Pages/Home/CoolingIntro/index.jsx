@@ -58,7 +58,7 @@ export default function CoolingIntro() {
                 {/* Attach ref here */}
                 <video  className='w-full h-screen' ref={videoRef}  poster='/CoolingSection/images/CoolingImg.webp' playsInline loop muted />
             </div>
-            <div className='w-[95%] backdrop-blur-none lg:backdrop-blur-md  PopUp absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
+            <div className='w-[95%] backdrop-blur-none lg:backdrop-blur-md PopUp absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
                 <h2 className='text-2xl lg:text-7xl text-white text-center mt-8 mb-20'>
                     Feeling safe while gaming with optimized cooling system
                 </h2>
