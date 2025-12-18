@@ -17,6 +17,7 @@ export default function Home() {
         <GpuIntro/>
         <DisplayIntro/>
         <CoolingIntro/>
+        
     </>
   )
 }

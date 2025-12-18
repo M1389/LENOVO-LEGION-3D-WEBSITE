@@ -53,7 +53,7 @@ export default function CoolingIntro() {
     }, [tablet])
 
     return (
-        <section id='coolingIntro' className='py-10 px-[5%] bg-black h-[2000px] lg:h-screen relative w-full'>
+        <section id='coolingIntro' className='py-10 px-[5%] bg-black h-[2000px] overflow-hidden lg:h-screen relative w-full'>
             <div>
                 {/* Attach ref here */}
                 <video  className='w-full h-screen' ref={videoRef}  poster='/CoolingSection/images/CoolingImg.webp' playsInline loop muted />
