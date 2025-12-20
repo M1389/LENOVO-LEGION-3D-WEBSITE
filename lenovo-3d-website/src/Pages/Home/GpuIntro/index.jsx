@@ -13,7 +13,8 @@ export default function GpuIntro() {
         <img className="w-[80%] mx-auto  z-60" src="/GPUSection/images/Lenovo-Top-2.png" alt="Lenovo" />
       </div>
       <div className="flex flex-col items-center">
-        <p className="text-xl lg:text-2xl text-white text-center w-[90%] lg:w-[50%]">Real, <span className="RGBTEXTURE">safe-feeling gaming with the NVIDIA GeForce 4060</span> — every motion rendered with stunning clarity and ultra-smooth performance. Enjoy responsive controls, immersive frame rates, realistic lighting and shadows, and reduced latency for stable, elevated gameplay.</p>
+        <h2 className='Orbitron RGBTEXTURE mb-5 font-bold text-3xl lg:text-8xl text-center '>RTX 4070-8GB DDR6</h2>
+        <p className="text-xl lg:text-2xl text-white text-center w-[90%] lg:w-[50%]">Real, <span className="RGBTEXTURE">safe-feeling gaming with the NVIDIA GeForce 4070</span> — every motion rendered with stunning clarity and ultra-smooth performance. Enjoy responsive controls, immersive frame rates, realistic lighting and shadows, and reduced latency for stable, elevated gameplay.</p>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mt-16">
         {gpuInfo.map((e,index)=>(
