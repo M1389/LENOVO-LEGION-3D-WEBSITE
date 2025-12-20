@@ -6,6 +6,7 @@ import CpuIntro from './CpuIntro'
 import GpuIntro from './GpuIntro'
 import DisplayIntro from './DisplayIntro'
 import CoolingIntro from './CoolingIntro'
+import PortsSection from './PortsSection'
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
         <GpuIntro/>
         <DisplayIntro/>
         <CoolingIntro/>
-        
+        <PortsSection/>
     </>
   )
 }
