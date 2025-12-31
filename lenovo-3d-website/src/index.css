@@ -35,3 +35,8 @@
   padding: 10px;
   
 }
+
+
+.ScrollHider::-webkit-scrollbar{
+  display: none;
+}
