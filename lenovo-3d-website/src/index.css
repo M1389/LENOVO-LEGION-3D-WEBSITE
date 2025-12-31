@@ -39,4 +39,10 @@
 
 .ScrollHider::-webkit-scrollbar{
   display: none;
+  
+}
+
+.ScrollHider{
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
 }
