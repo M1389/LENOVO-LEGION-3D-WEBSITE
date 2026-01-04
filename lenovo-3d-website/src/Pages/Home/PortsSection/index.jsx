@@ -3,7 +3,7 @@ import gsap from "gsap/all";
 import React, { useEffect, useRef, useState } from "react";
 
 export default function PortsSection() {
-  const [pos, setPos] = useState("Center");
+  const [pos, setPos] = useState("Right");
   const scrollContainerRef = useRef(null);
 
   const movePos = (pos) => {
@@ -87,25 +87,25 @@ export default function PortsSection() {
       <div className="flex flex-row justify-center items-center px-[5%] mt-10 flex-wrap min-h-[40vh]">
         <div className={`flex flex-col gap-5 items-center FadeScroll ${pos === 'Right' ? 'flex' : 'hidden'}`}>
           <p className={` text-xl lg:text-2xl duration-500 RGBTEXTURE text-center `}>
-            1. USB-C 3.2 Gen 2 (DisplayPort™ 1.4)
+            1. Headphone/mic combo
           </p>
-          <p className={` text-xl lg:text-2xl duration-500 RGBTEXTURE `}>2. Headphone/mic combo</p>
+          <p className={` text-xl lg:text-2xl duration-500 RGBTEXTURE `}>2. Webcam e-shutter switch</p>
           
         </div>
         <div className={`flex flex-col gap-5 items-center FadeScroll ${pos === 'Center' ? 'flex' : 'hidden'}`}>
           <p className={` text-xl lg:text-2xl RGBTEXTURE`}>3. USB-A 3.2 Gen 1</p>
           <p className={` text-xl lg:text-2xl RGBTEXTURE`}>4. USB-A 3.2 Gen 1</p>
-          <p className={` text-xl lg:text-2xl  RGBTEXTURE`}>5. Webcam e-shutter switch</p>
-          <p className={` text-xl lg:text-2xl RGBTEXTURE`}>6. DC-in</p>
+          <p className={` text-xl lg:text-2xl  RGBTEXTURE text-center`}>5. USB-C 3.2 Gen 2 (DisplayPort™ 1.4)</p>
+          <p className={` text-xl lg:text-2xl RGBTEXTURE`}>6. Ethernet (RJ45)</p>
             <p className={` text-xl lg:text-2xl RGBTEXTURE text-center`}>
-            7. 2 x USB-A 3.2 Gen 1 (1x always on 5V2A)
+            7. USB-C 3.2 Gen 2
             </p>
-            <p className={`text-xl lg:text-2xl RGBTEXTURE`}>8.USB-C 3.2 Gen 2</p>
+            <p className={`text-xl lg:text-2xl RGBTEXTURE`}>8.HDMI 2.1</p>
         </div>
         <div className={`flex flex-col gap-5 items-center FadeScroll ${pos === 'Left' ? 'flex' : 'hidden'}`}>
             
-            <p className={`text-xl lg:text-2xl RGBTEXTURE`}>9. HDMI 2.1</p>
-            <p className={`text-xl lg:text-2xl RGBTEXTURE`}>10. Ethernet (RJ45)</p>
+            <p className={`text-xl lg:text-2xl RGBTEXTURE text-center`}>9. 2x USB-A 3.2 Gen 1 (1x always on 52VA)</p>
+            <p className={`text-xl lg:text-2xl RGBTEXTURE`}>10. DC-in</p>
         </div>
       </div>
     </section>
